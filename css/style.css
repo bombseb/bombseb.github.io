@@ -1,0 +1,59 @@
+body{
+    padding-top: 110px;
+}
+
+.portrait{
+    width: 3em;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.transparent{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.parallax-window {
+	background: transparent;
+    position: relative;
+}
+
+/* .title{
+    background-color: cornflowerblue;
+    padding: 10px;;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.grow {
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/* Résoudre le décalage des ancres du à la navbar fixed */
+/* https://github.com/twbs/bootstrap/issues/1768#issuecomment-46519033 */
+
+*[id]:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -110px; 
+    height: 110px; 
+    visibility: hidden; 
+  }
+
+  
