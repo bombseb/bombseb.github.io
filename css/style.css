@@ -56,4 +56,6 @@ body{
     visibility: hidden; 
   }
 
-  
+  .maLettrine{
+      font-size: 3em;
+  }
